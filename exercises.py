@@ -9,6 +9,7 @@
 #
 # Define your function and call it below.
 
+
 def calculate_area_triangle(base,height):
     return (base*height) / 2
 
@@ -78,6 +79,19 @@ def sum_to(n):
     return sum
 
 
+# Exercise 6: Find the Largest Number
+#
+# Write a function named `largest` that takes three integers as arguments and returns the largest of them.
+#
+# Examples:
+# largest(1, 2, 3) should return 3.
+# largest(10, 4, 2) should return 10.
+#
+# Define your function and test it with different inputs.
+
+def largest(n1, n2, n3):
+    return max(n1,n2,n3)
+
 
 
 
@@ -88,3 +102,5 @@ print('Exercise 3:', apply_discount(100, 25))
 print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
 print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
 print('Exercise 5:', sum_to(6))
+print('Exercise 6:', largest(1, 2, 10))
+
