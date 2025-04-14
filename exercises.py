@@ -93,6 +93,21 @@ def largest(n1, n2, n3):
     return max(n1,n2,n3)
 
 
+# Exercise 7: Calculate a Tip
+#
+# Create a function called `calculate_tip`. It should take the bill amount and the tip percentage (as a whole number).
+# The function should return the amount of the tip.
+#
+# Examples:
+# calculate_tip(50, 20) should return 10.
+#
+# Write your function and test its output below.
+
+def calculate_tip(bill, percentage):
+    return (bill * (percentage/100))
+
+
+
 
 
 
@@ -103,4 +118,5 @@ print('Exercise 4: Convert 0°C to Fahrenheit:', convert_temperature(0, 'C'))
 print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
 print('Exercise 5:', sum_to(6))
 print('Exercise 6:', largest(1, 2, 10))
+print('Exercise 7:', calculate_tip(50, 20))
 
