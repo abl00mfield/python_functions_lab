@@ -106,6 +106,24 @@ def largest(n1, n2, n3):
 def calculate_tip(bill, percentage):
     return (bill * (percentage/100))
 
+# Exercise 8: Calculate Product of Numbers
+#
+# Write a function named `product` that takes an arbitrary number of numbers, multiplies them, and returns the product.
+# Review your notes on *args for handling an arbitrary number of arguments.
+#
+# Examples:
+# product(-1, 4) should return -4.
+# product(2, 5, 5) should return 50.
+#
+# Define the function and call it with different sets of numbers to test.
+
+def product(*args):
+    total = 1;
+    for num in args:
+        total *= num;
+    return total
+
+
 
 
 
@@ -119,4 +137,5 @@ print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
 print('Exercise 5:', sum_to(6))
 print('Exercise 6:', largest(1, 2, 10))
 print('Exercise 7:', calculate_tip(50, 20))
+print('Exercise 8:', product(2, 5, 5))
 
