@@ -54,7 +54,11 @@ def apply_discount(price, discount):
 # convert_temperature(32, 'F') should return 0.0.
 #
 # Define the function and then call it below.
-
+def convert_temperature(temp, unit):
+    if unit == "F" :
+        return (temp - 32) * 5/9
+    if unit == "C":
+        return (temp * 9/5) + 32
 
 
 
